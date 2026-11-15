@@ -1,0 +1,35 @@
+{
+  "_comment": "Copy-paste template for module_executor.py MODULE_CONFIG. Shows all supported keys.",
+  "remote/new_rce": {
+    "script": "exploit.py",
+    "arg_map": {
+      "RHOST": "target",
+      "RPORT": "",
+      "TIMEOUT": "-t",
+      "COMMAND": "-c",
+      "LHOST": "--lhost",
+      "LPORT": "--lport",
+      "OUTPUT": "-o"
+    },
+    "flag_actions": {
+      "check": "--check",
+      "harvest": "--harvest",
+      "loot": "--loot"
+    },
+    "payload_actions": {
+      "reverse_shell": "--reverse",
+      "webshell": "--webshell"
+    },
+    "no_json": false,
+    "_notes": {
+      "RHOST_values": "'host' = positional, 'target' = URL-form with https://, '-u' = explicit flag",
+      "RPORT_empty": "No CLI flag, default port used. Still needs RPORT in module_options.json for console display.",
+      "no_json": "Set true if exploit doesn't support --json output. Prevents executor auto-append.",
+      "flag_actions": "Boolean flags, no value. Executor appends bare flag if payload matches.",
+      "payload_actions": "Flags that take values. For combine values like HOST:PORT, use COMMAND payload instead.",
+      "RPORT_less": "If exploit embeds port in URL (no -p flag), use 'RHOST': 'target' and omit RPORT from arg_map.",
+      "https_modules": "Add to https_modules list for 'target' style to get https:// prefix.",
+      "ssh_modules": "Add to ssh_modules list for 'host' style (bare host, port via -p)."
+    }
+  }
+}

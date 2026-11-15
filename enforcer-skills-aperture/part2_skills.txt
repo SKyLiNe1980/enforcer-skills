@@ -1,0 +1,159 @@
+Parsed 38 skills:
+
+=== autonomous-ai-agents/claude-code/SKILL.md ===
+Name: claude-code
+Description: Delegate coding to Claude Code CLI (features, PRs).
+
+=== autonomous-ai-agents/codex/SKILL.md ===
+Name: codex
+Description: Delegate coding to OpenAI Codex CLI (features, PRs).
+
+=== autonomous-ai-agents/dynamic-workflow/SKILL.md ===
+Name: dynamic-workflow
+Description: Orchestrate large fan-out work as a plan-in-code "workflow" so the agent's context holds only the final verified answer, not the exhaust of hundreds of intermediate steps. Use for codebase-wide sweeps, large migrations, multi-angle research, and any task too big for one context window where the split strategy is known enough to script. Includes the adversarial-convergence verification recipe (independent attempts + refuters, keep only surviving claims).
+
+=== autonomous-ai-agents/hermes-agent/SKILL.md ===
+Name: hermes-agent
+Description: Configure, extend, or contribute to Hermes Agent.
+
+=== autonomous-ai-agents/kanban-codex-lane/SKILL.md ===
+Name: kanban-codex-lane
+Description: Use when a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff.
+
+=== autonomous-ai-agents/opencode/SKILL.md ===
+Name: opencode
+Description: Delegate coding to OpenCode CLI (features, PR review).
+
+=== exploit-development/SKILL.md ===
+Name: exploit-development
+Description: Building and field-testing exploits — research, enhancement, deployment, and real-world validation. Use when developing new CVE exploits, porting PoCs, integrating modules into the Enforcer UE Framework, or troubleshooting exploitation failures against live targets.
+
+=== exploits/enforcer-framework/SKILL.md ===
+Name: enforcer-framework
+Description: Enforcer UE Framework development — interactive exploit console, module registry, executor pipeline, adding new CVEs, git backup workflow. Use when extending the Enforcer exploit framework with new CVE modules, fixing module wiring, or debugging the executor-to-script bridge.
+
+=== exploits/exploits-research/SKILL.md ===
+Name: exploits-research
+Description: Exploit research and development methodology. Load when developing or porting exploits — covers heap exploitation patterns (UAF, spray, leak), binary analysis for symbol discovery, and the research pipeline from PoC to weaponized exploit.
+
+=== exploits/redis-exploitation/SKILL.md ===
+Name: redis-exploitation
+Description: Redis exploitation techniques — CVE-2025-49844 Lua UAF, classic RCE (SLAVEOF/SSH/cron/MODULE LOAD), key looting, version fingerprinting. Includes heap exploitation research findings.
+
+=== github/SKILL.md ===
+Name: github
+Description: Complete GitHub workflow — auth setup, repo management, PR lifecycle, code review, and issue triage via gh CLI or git+curl fallback.
+
+=== github/codebase-inspection/SKILL.md ===
+Name: codebase-inspection
+Description: Inspect codebases w/ pygount: LOC, languages, ratios.
+
+=== gtk-derivation-hole196/SKILL.md ===
+Name: gtk-derivation-hole196
+Description: Derive the GTK from a captured WPA2 4-way handshake and known passphrase. Enables Hole 196 broadcast injection attacks.
+
+=== mcp/native-mcp/SKILL.md ===
+Name: native-mcp
+Description: MCP client: connect servers, register tools (stdio/HTTP).
+
+=== red-teaming/godmode/SKILL.md ===
+Name: godmode
+Description: Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.
+
+=== security/ai-pentest-briefing/SKILL.md ===
+Name: ai-pentest-briefing
+Description: Briefing methodology for AI pentesting tools (PentAGI, Strix, Saber, etc.). Transform noisy automated scanners into surgical exploitation engines through strategic instruction design.
+
+=== security/embedded-web-pentesting/SKILL.md ===
+Name: embedded-web-pentesting
+Description: Exploit web interfaces on embedded devices (cameras, routers, IoT). JS-login bypass via browser automation, API discovery via minified JS source analysis, upload path traversal, and config injection.
+
+=== security/hikvision-ra5-anpr-pwn/SKILL.md ===
+Name: hikvision-ra5-anpr-pwn
+Description: Full recon-to-exfil pipeline for Hikvision RA5 series ANPR cameras (RA556A-E99D). Login bypass via AES-CTR, config exfiltration, arbitrary file write, API mapping.
+
+=== security/mongoose-cve-2026-exploit/SKILL.md ===
+Name: mongoose-cve-2026-exploit
+Description: PoC exploits for CVE-2026-5244 (TLS heap overflow), CVE-2026-5245  (mDNS stack overflow), and CVE-2026-5246 (mTLS bypass) in Mongoose v7.20. Source: evilsocket.net/2026/04/02/
+
+=== security/pentest-workflow/SKILL.md ===
+Name: pentest-workflow
+Description: AI-assisted pentesting workflow: PentAGI briefing techniques, exploit framework
+architecture, module/plugin patterns, and common pitfalls from PentaSploit/Enforcer
+framework development.
+Load this whenever: building or extending exploit frameworks (Metasploit-style),
+briefing AI agents for pentesting tasks, integrating new CVEs into existing
+toolkits, or debugging hallucinated exploit descriptions.
+
+=== software-development/debugging-hermes-tui-commands/SKILL.md ===
+Name: debugging-hermes-tui-commands
+Description: Debug Hermes TUI slash commands: Python, gateway, Ink UI.
+
+=== software-development/enforcer-exploit-integration/SKILL.md ===
+Name: enforcer-exploit-integration
+Description: Integrate new CVE exploits into the Enforcer UE Framework — module registration, executor config, option cleanup. Use when adding any new CVE to PentaSploit/Enforcer.
+
+=== software-development/enforcer-ue-framework/SKILL.md ===
+Name: enforcer-ue-framework
+Description: Develop, extend, and debug the Enforcer Unified Exploit Framework — interactive console, module executor, multi-arch payload system. Use when adding modules, fixing executor bugs, or wiring new CVEs into the framework.
+
+=== software-development/hermes-agent-skill-authoring/SKILL.md ===
+Name: hermes-agent-skill-authoring
+Description: Author in-repo SKILL.md: frontmatter, validator, structure, and writing-quality principles.
+
+=== software-development/hermes-s6-container-supervision/SKILL.md ===
+Name: hermes-s6-container-supervision
+Description: Modify, debug, or extend the s6-overlay supervision tree inside the Hermes Agent Docker image — adding new services, debugging profile gateways, understanding the Architecture B main-program pattern.
+
+=== software-development/node-inspect-debugger/SKILL.md ===
+Name: node-inspect-debugger
+Description: Debug Node.js via --inspect + Chrome DevTools Protocol CLI.
+
+=== software-development/plan/SKILL.md ===
+Name: plan
+Description: Plan mode: write an actionable markdown plan to .hermes/plans/, no execution. Bite-sized tasks, exact paths, complete code.
+
+=== software-development/python-debugpy/SKILL.md ===
+Name: python-debugpy
+Description: Debug Python: pdb REPL + debugpy remote (DAP).
+
+=== software-development/requesting-code-review/SKILL.md ===
+Name: requesting-code-review
+Description: Pre-commit review: security scan, quality gates, auto-fix.
+
+=== software-development/simplify-code/SKILL.md ===
+Name: simplify-code
+Description: Parallel 3-agent cleanup of recent code changes.
+
+=== software-development/spike/SKILL.md ===
+Name: spike
+Description: Throwaway experiments to validate an idea before build.
+
+=== software-development/subagent-driven-development/SKILL.md ===
+Name: subagent-driven-development
+Description: Execute plans via delegate_task subagents (2-stage review).
+
+=== software-development/systematic-debugging/SKILL.md ===
+Name: systematic-debugging
+Description: 4-phase root cause debugging: understand bugs before fixing.
+
+=== software-development/test-driven-development/SKILL.md ===
+Name: test-driven-development
+Description: TDD: enforce RED-GREEN-REFACTOR, tests before code.
+
+=== software-development/writing-plans/SKILL.md ===
+Name: writing-plans
+Description: Write implementation plans: bite-sized tasks, paths, code.
+
+=== vigolium-scanner/SKILL.md ===
+Name: vigolium-scanner
+Description: Use when operating the vigolium CLI for web vulnerability scanning, security testing, traffic ingestion, server management, AI agent-driven scanning and code review, cloud-storage management, or writing custom JavaScript extensions. Invoke for scan commands, scan-url, scan-request, run, ingest, server, agent (query/autopilot/swarm/olium/piolium/audit/session), traffic browsing, database queries, storage uploads/downloads, module management, extension scripting, export, project management, and configuration tuning.
+
+=== wireless/s10-wifi-interface-management/SKILL.md ===
+Name: s10-wifi-interface-management
+Description: Managing Alfa AWUS051NH/AWUS036NH interfaces on S10+ with Gemster Kernel. Covers interface availability, rename quirks, and Android WiFi HAL conflicts.
+
+=== wireless/wpasec-upload/SKILL.md ===
+Name: wpasec-upload
+Description: Upload WPA captures (.cap/.pcap/.pcapng/.22000) to wpa-sec.stanev.org for distributed cracking. Handles the two-step session flow (key POST → upload) that the broken wlancap2wpasec tool cannot.
+
